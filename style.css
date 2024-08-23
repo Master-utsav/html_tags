@@ -1,0 +1,265 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, table, figure, figcaption, input, button, textarea, select, video, audio {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+}
+
+/* Base settings for dark theme */
+body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for headings */
+h1, h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Styling for sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+thead th {
+    background-color: #444;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    background-color: #3b3b3b;
+    border-top: 1px solid #555;
+}
+
+tfoot td {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for form elements */
+fieldset {
+    border: 1px solid #666;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    color: #ffd700;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #444;
+    color: #f5f5f5;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #ffa500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+/* Styling for progress and meter */
+progress, meter {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar, meter {
+    background-color: #555;
+}
+
+progress::-webkit-progress-value, meter::-webkit-meter-optimum-value {
+    background-color: #ffa500;
+}
+
+progress::-moz-progress-bar {
+    background-color: #ffa500;
+}
+
+/* Styling for figure and figcaption */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styling for embedded content */
+iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for data lists */
+datalist option {
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #666;
+}
+
+footer p, footer address, footer time {
+    color: #888;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for dialog */
+dialog {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+dialog button {
+    margin-top: 10px;
+}
+
+/* Styling for details and summary */
+details {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+details p {
+    padding-top: 10px;
+}
+
+/* Code and keyboard input styling */
+code {
+    background-color: #444;
+    color: #ffa500;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+kbd {
+    background-color: #555;
+    color: #f5f5f5;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

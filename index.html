@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample HTML5-based webpage demonstrating various HTML tags.">
+    <title>HTML5 Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My HTML5 Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About This Project</h2>
+            <article>
+                <p>This project is an example of a basic HTML5 webpage that uses various semantic HTML tags. It is designed to showcase the use of HTML5 elements such as header, nav, section, article, footer, and more.</p>
+                <aside>
+                    <p><strong>Tip:</strong> Use semantic tags for better accessibility and SEO.</p>
+                </aside>
+            </article>
+            
+            <!-- Abbreviation -->
+            <p>We use <abbr title="HyperText Markup Language">HTML</abbr> to structure our web pages.</p>
+
+            <!-- Ruby with rt and rp -->
+            <p>Here is a ruby text example:</p>
+            <ruby>
+                漢 <rt>kan</rt>
+                字 <rt>ji</rt>
+            </ruby>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <figure>
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image">
+                <figcaption>Sample Image</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Table of Information</h2>
+            <table>
+                <caption>Features of HTML5</caption>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>The latest version of HTML with new semantic tags and features.</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Ensures the webpage looks good on all devices.</td>
+                    </tr>
+                    <tr>
+                        <td>Forms</td>
+                        <td>Supports input fields, buttons, and other form controls.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">End of Table</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Video and Audio</h2>
+            <video controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>User Information</h2>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+                    <label for="file">Upload a file:</label>
+                    <input type="file" id="file" name="file">
+
+                    <label for="subscribe">Subscribe to our newsletter:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Dialog -->
+        <section>
+            <h2>Dialog Example</h2>
+            <button onclick="document.getElementById('dialog').showModal();">Show Dialog</button>
+            <dialog id="dialog">
+                <p>This is a dialog box.</p>
+                <button onclick="document.getElementById('dialog').close();">Close</button>
+            </dialog>
+        </section>
+
+        <!-- Details -->
+        <section>
+            <h2>More Information</h2>
+            <details>
+                <summary>Click to expand</summary>
+                <p>This is the additional information that is hidden by default.</p>
+            </details>
+        </section>
+
+        <!-- Code and Keyboard Input -->
+        <section>
+            <h2>Code Example</h2>
+            <p>To print "Hello World" in JavaScript, use the following code:</p>
+            <pre><code>console.log('Hello World');</code></pre>
+
+            <p>To save a file, press <kbd>Ctrl</kbd> + <kbd>S</kbd> on your keyboard.</p>
+        </section>
+
+        <section>
+            <h2>Progress and Meter</h2>
+            <p>Task Progress:</p>
+            <progress value="70" max="100">70%</progress>
+
+            <p>Disk Usage:</p>
+            <meter value="0.6">60%</meter>
+        </section>
+
+        <section>
+            <h2>Embedded Content</h2>
+            <iframe src="https://www.example.com" title="Example Website" width="600" height="400"></iframe>
+        </section>
+
+        <section>
+            <h2>Data Lists</h2>
+            <label for="browsers">Choose your browser from the list:</label>
+            <input list="browsers" id="browser" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My HTML5 Project</p>
+        <address>
+            Contact us at <a href="mailto:support@example.com">support@example.com</a>
+        </address>
+        <time datetime="2024-08-23">August 23, 2024</time>
+    </footer>
+</body>
+
+</html>
